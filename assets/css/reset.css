@@ -12,9 +12,12 @@
     --cinza: #D1D1D1;
     --branco: #fff;
     --preto: #0e0e0e;
+    --title-color-gradient: linear-gradient(to left, #03001e, #9307f1, #7109e7 , #1100ff);
+    --subtitle-section-gradient: linear-gradient(to left, #fb06c2, #7300ff, #04fa7f);
 }
 
 html, body {
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
+    background-color: var(--branco);
 }

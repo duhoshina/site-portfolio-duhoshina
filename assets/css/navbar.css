@@ -15,6 +15,7 @@
     letter-spacing: 0.1em;
     transition: 1.5s;
     font-weight: 500;
+    color: var(--preto);
 }
 
 #name-navbar:hover {
@@ -25,8 +26,9 @@
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin: 0 60px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: var(--branco);
     height: 8vh;
@@ -62,6 +64,20 @@ main {
     transition: .3s ;
 }
 
+.nav-list.active {
+    transform: translateX(0);
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
 @media (max-width: 999px) {
     body {
         overflow-x: hidden;
@@ -89,19 +105,8 @@ main {
     .mobile-menu {
         display: block;
     }
-}
 
-
-.nav-list.active {
-    transform: translateX(0);
-}
-
-.mobile-menu.active .line1 {
-    transform: rotate(-45deg) translate(-8px, 8px);
-}
-.mobile-menu.active .line2 {
-    opacity: 0;
-}
-.mobile-menu.active .line3 {
-    transform: rotate(45deg) translate(-5px, -7px);
+    nav {
+        margin: 0 30px;
+    }
 }

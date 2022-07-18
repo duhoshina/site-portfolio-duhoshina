@@ -28,10 +28,12 @@
     font-family: 'Abel', sans-serif;
     font-size: 1.5em;
     margin-bottom: 40px;
+    color: var(--preto);
 }
 
 .container-left > p:nth-child(1) {
     background-color: var(--azulclaro);
+    color: var(--preto);
     padding: 5px 30px;
     width: 30px;
     border-radius: 10px;
@@ -41,6 +43,7 @@
 
 .container-left > h1 {
     font-size: 3em;
+    color: var(--preto);
     text-align: center;
 }
 
@@ -56,8 +59,8 @@
 .container-btn {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    width: 400px;
+    justify-content: space-between;
+    width: 350px;
 }
 
 .container-btn > a:nth-child(1) {
@@ -75,7 +78,7 @@
 }
 
 .container-btn > a:nth-child(1):hover {
-    background-color: #fff;
+    background-color: var(--branco);
     color: var(--preto);
     transition: 0.3s;
 }
@@ -95,7 +98,7 @@
 }
 
 .container-btn > a:nth-child(2):hover {
-    background-color: #fff;
+    background-color: var(--branco);
     color: var(--preto);
     transition: 0.3s;
 }
@@ -130,4 +133,10 @@
         text-align: center;
     }
 
+}
+
+@media (max-width: 387px) {
+    #name-navbar {
+        font-size: 1em;
+    }
 }
